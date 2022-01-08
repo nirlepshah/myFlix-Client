@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/nirlepshah/myFlix-Client/issues"
   },
-  "homepage": "https://github.com/nirlepshah/myFlix-Client#readme"
+  "homepage": "https://github.com/nirlepshah/myFlix-Client#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
