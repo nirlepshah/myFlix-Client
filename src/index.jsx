@@ -1,21 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // Import React object from react module
+import ReactDOM from 'react-dom'; // Import ReactDOM object from react-dom module
+import { MainView } from './components/main-view/main-view';
+import { MovieView } from './components/movie-view/movie-view';
 
+// Importing ./index.scss`
 import './index.scss';
 
-// Root component 
-class MyFlixApplication extends React.Component {
+// Main component 
+class MyFlix extends React.Component {
   render() {
     return (
-      <div className="my-flix">
-        <div>Good morning</div>
-      </div>
+      <MainView />
     );
   }
 }
 
-// Finds the root of app
+// Finds the root of app from index.html
 const container = document.getElementsByClassName('app-container')[0];
 
-// Tells React to render app in the root DOM element
-ReactDOM.render(React.createElement(MyFlixApplication), container);
+// Tells ReactDOM object to render app in the root DOM element using render method
+ReactDOM.render(React.createElement(MyFlix), container);
