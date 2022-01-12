@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nirlepshah/myFlix-Client#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "parcel": "^1.12.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
