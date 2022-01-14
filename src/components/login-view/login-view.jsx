@@ -1,28 +1,36 @@
-import React, { useState } from 'react';
-
+import React, { useState } from 'react'; // import useState hook
+import propTypes from 'prop-types'; // import propType
+////Login View Component
 export function LoginView(props) {
-  const [ Username, setUsername ] = useState('');
-  const [ Password, setPassword ] = useState('');
+  const [ username, setUsername ] = useState('');
+  const [ password, setPassword ] = useState('');
 
+  // method to hadle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(Username, Password);
-     props.onLoggedIn(Username);
+    console.log(username, password);
+    props.onLoggedIn(username); // allows  user to be automatically log in
   };
-
-
   return (
     <form>
       <label>
         Username:
-        <input type="text" value={Username} onChange={e => setUsername(e.target.value)} />
+        <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
       </label>
       <label>
         Password:
-        <input type="password" value={Password} onChange={e => setPassword(e.target.value)} />
+        <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
       </label>
       <button type="submit" onClick={handleSubmit}>Submit</button>
     </form>
   );
   
 }
+//propType defined for LoginView  Component
+LoginView.propTypes = {
+  user: propTypes.shape({
+    username: propTypes.string,
+    password: propTypes.string
+  }).isRequired,
+  onLoggedIn: propTypes.func.isRequired,
+};
