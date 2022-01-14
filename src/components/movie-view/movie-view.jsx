@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 //Component to be rendered when movie is selected 
 export class MovieView extends React.Component {
 
@@ -32,12 +33,14 @@ export class MovieView extends React.Component {
     );
   }
 }
+//propType defined for MovieView Component
+
 MovieView.propTypes = {
-  movie: PropTypes.shape({
-    Title: PropTypes.string,
-    Description: PropTypes.string,
-    Genre: PropTypes.string,
-    Director: PropTypes.string,
+   movies: propTypes.shape({
+    Title: propTypes.string,
+    Description: propTypes.string,
+    Genre: propTypes.string,
+    Director: propTypes.string,
   }).isRequired,
-  onBackClick: PropTypes.func.isRequired
+  onBackClick: propTypes.func.isRequired
 };
