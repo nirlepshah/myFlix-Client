@@ -1,5 +1,5 @@
 import React from 'react';
-import { RegistrationView } from '../registration-view/registration-view';
+ import { RegistrationView } from '../registration-view/registration-view';
 import { LoginView } from '../login-view/login-view';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
@@ -13,12 +13,15 @@ export class MainView extends React.Component {
             // Movie Array State
             movies:[],
             selectedMovie: null, // Second State
-            user: null
+            user: null,
+            register: null
+            
+
         }
         
     }
-    // Use of Axios to fetch movies from API server's /movies endpoint 
-    componentDidMount(){
+    // Axios to fetch movies from server API /movies endpoint    
+componentDidMount(){
 axios.get('https://mymovieapp08.herokuapp.com/movies')
 .then(response => {
   this.setState({
@@ -36,23 +39,31 @@ axios.get('https://mymovieapp08.herokuapp.com/movies')
           selectedMovie: newSelectedMovie
         });
       }
-      // when user logs in, user property in the state is updated to particular user
+
+   //  when user registers register state is updated
+      onRegistration(register) {
+        this.setState({
+          register,
+        });
+      }
+
+    //  when user logs in, user property in the state is updated to particular user
       onLoggedIn(user) {
         this.setState({
           user
         });
       }
-      // when user registers
-      // onRegistration(register) {
-      //   this.setState({
-      //     register,
-      //   });
-      // }
+    
 
   render() {
-   const { movies, selectedMovie } = this.state;
+   const { movies, selectedMovie, user, register } = this.state;
+   
+   //Register view is rendered 
+   if (!register) return (<RegistrationView onRegistration={register => this.onRegistration(register)}/>);
+
    // if there is no user login view is rendered
-    // if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
+    
+   if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
   
    // Blank page before movies are loaded
    if (movies.length === 0) return <div className="main-view" />
