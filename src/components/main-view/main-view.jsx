@@ -40,7 +40,7 @@ axios.get('https://mymovieapp08.herokuapp.com/movies')
         });
       }
 
-   //  when user registers register state is updated
+   //  when user registers register property in the state is updated
       onRegistration(register) {
         this.setState({
           register,
