@@ -7,6 +7,7 @@ export class MovieCard extends React.Component {
     return <div className="movie-card" onClick={() => { onMovieClick(movie); }}>{movie.Title}</div>;
   }
 }
+
 //propType has been defined for MovieCard Component
 
 MovieCard.propTypes = {
