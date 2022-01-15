@@ -22776,7 +22776,7 @@ class MainView extends _reactDefault.default.Component {
             selectedMovie: newSelectedMovie
         });
     }
-    //  when user registers register state is updated
+    //  when user registers register property in the state is updated
     onRegistration(register) {
         this.setState({
             register
