@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.LoginCard {
+  margin-top: 50%;
+}
+.LoginContainer {
+  background-color: lightslategray;
+
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+}
+.registerLink {
+  font-weight: bold;
+  color: #eeb76b !important;
+}
