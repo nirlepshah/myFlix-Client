@@ -967,10 +967,6 @@ class MyFlix extends _reactDefault.default.Component {
                 __self: this
             })
         }));
-    //original
-    // return (
-    //   <MainView />
-    // );
     }
 }
 // Finds the root of app from index.html
