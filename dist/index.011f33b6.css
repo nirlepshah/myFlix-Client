@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  height: 8rem;
+}
+
+.footer {
+  background-color: lightslategray;
+  position: fixed;
+  height: 3rem;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.registrationnav {
+  height: 4rem;
+  top: 0px;
+  right: 0px;
+  background-color: lightslategray;
+  position: fixed;
+  left: 0px;
+}
+
+.register-card {
+  color: black;
+}
+.my-flix {
+  color: steelblue;
+}
+/*# sourceMappingURL=index.011f33b6.css.map */

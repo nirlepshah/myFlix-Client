@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.moviecard {
+  max-height: 20rem;
+  min-height: 26rem;
+  margin-top: 10px;
+}
+
+.cardTitle {
+  font-style: italic;
+  padding-top: 2px;
+  font-variant: small-caps;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+.LoginCard {
+  margin-top: 50%;
+}
+
+.LoginContainer {
+  background-color: lightslategray;
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.registerLink {
+  font-weight: bold;
+  color: #eeb76b !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  height: 7rem;
+}
+
+.footer {
+  background-color: lightslategray;
+  position: fixed;
+  height: 3rem;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.registrationnav {
+  height: 4rem;
+  top: 0px;
+  right: 0px;
+  background-color: lightslategray;
+  position: fixed;
+  left: 0px;
+}
+
+.register-card {
+  color: black;
+}
+
+.registerbtn {
+  color: white !important;
+  background: darkblue !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main-view {
+  margin-top: 1rem;
+}
+.my-flix {
+  color: steelblue;
+}
+/*# sourceMappingURL=index.3f764291.css.map */
