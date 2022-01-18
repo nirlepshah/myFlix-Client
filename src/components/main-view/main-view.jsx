@@ -20,6 +20,7 @@ export class MainView extends React.Component {
       register: null,
     };
   }
+
   // Axios to fetch movies from server API /movies endpoint
   componentDidMount() {
     axios
@@ -76,6 +77,7 @@ export class MainView extends React.Component {
 
     return (
       //Add React Bootstrap components
+
       <div className="main-view">
         <Row className="main-view justify-content-md-center">
           {selectedMovie ? (
@@ -100,6 +102,7 @@ export class MainView extends React.Component {
                     movie={movie}
                     onMovieClick={(movie) => {
                       this.setSelectedMovie(movie);
+                      window.scroll(0, 0); //method to scroll windows to top
                     }}
                   />
                 </Col>
