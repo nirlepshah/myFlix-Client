@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 //Import React Bootstrap Components
 import { Button, Container, Row, Col, Card, CardGroup } from "react-bootstrap";
@@ -30,14 +31,22 @@ export class MovieCard extends React.Component {
                     <Card.Title className="cardTitle">{movie.Title}</Card.Title>
                     <Card.Text> {movie.Descripton} </Card.Text>
 
-                    <Button
-                      size="sm"
-                      onClick={() => onMovieClick(movie)}
-                      variant="link"
-                      variant="outline-info"
-                    >
-                      Open
-                    </Button>
+                    <Link to={`/movies/${movie._id}`}>
+                      <Button
+                        variant="link"
+                        onClick={() => {
+                          window.scroll(0, 0);
+                        }}
+                      >
+                        Open
+                      </Button>
+                    </Link>
+                    <Link to={`/directors/${movie.Director.Name}`}>
+                      <Button variant="link">Director</Button>
+                    </Link>
+                    <Link to={`/genre/${movie.Genre.Name}`}>
+                      <Button variant="link">Genre</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </CardGroup>
