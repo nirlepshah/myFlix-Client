@@ -1,4 +1,5 @@
 import React, { useState } from "react"; // import useState hook
+import axios from "axios"; //import axios
 import propTypes from "prop-types"; // import propType
 //Import React Bootstrap Components
 import {
@@ -15,17 +16,52 @@ import {
 } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import "./login-view.scss";
+import axios from "axios";
 
 ////Login View Component
 export function LoginView(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [usernameErr, setUsernameErr] = useState("");
+  const [passwordErr, setPasswordErr] = useState("");
+
+  const validate = () => {
+    let isReq = true;
+    if (!username) {
+      setUsernameErr("Username required");
+      isRequired = false;
+    }
+    if (!password) {
+      setPasswordErr("Password is required");
+      isReq = false;
+    } else if (password.length < 4) {
+      setPasswordErr("Password must be 8 characters long");
+      isReq = false;
+    }
+    return isReq;
+  };
 
   // method to hadle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(username, password);
-    props.onLoggedIn(username); // allows  user to be automatically log in
+    const isReq = validate();
+    if (isReq) {
+      //Send request to the server for authentication
+      axios
+        .post("https://mymovieapp08.herokuapp.com/login", {
+          Username: username,
+          Password: password,
+        })
+        .then((response) => {
+          const data = response.data;
+          props.onLoggedIn(data);
+        })
+        .catch((e) => {
+          console.log("no such user");
+        });
+      // console.log(username, password);
+      // props.onLoggedIn(username); // allows  user to be automatically log in
+    }
   };
 
   return (
@@ -44,18 +80,25 @@ export function LoginView(props) {
                       <Form.Label> Username:</Form.Label>
                       <Form.Control
                         type="text"
+                        value={username}
                         onChange={(e) => setUsername(e.target.value)}
+                        // onChange={(e) => setUsername(e.target.value)}
                         placeholder="Enter Username"
                       />
+                      {usernameErr && <p>{usernameErr}</p>}
                     </Form.Group>
                     <br />
                     <Form.Group>
                       <Form.Label> Password:</Form.Label>
                       <Form.Control
                         type="password"
-                        onChange={(e) => setPassword(e.target.value)}
+                        // onChange={(e) => setPassword(e.target.value)}
                         placeholder="Enter Password"
+                        minLength={4}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
+                      {passwordErr && <p>{passwordErr}</p>}
                     </Form.Group>
                     <br />
                     <Button
