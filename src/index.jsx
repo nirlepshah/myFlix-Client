@@ -1,4 +1,5 @@
 import React from "react"; // Import React object from react module
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom"; // Import ReactDOM object from react-dom module
 import { MainView } from "./components/main-view/main-view";
 import { MovieView } from "./components/movie-view/movie-view";
