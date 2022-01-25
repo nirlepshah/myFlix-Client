@@ -1,6 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
-
+import { Link } from "react-router-dom";
 //Component to be rendered when movie is selected
 export class MovieView extends React.Component {
   render() {
@@ -45,7 +46,7 @@ export class MovieView extends React.Component {
         <br />
         <button
           onClick={() => {
-            onBackClick(null);
+            window.history.back();
           }}
         >
           Back
