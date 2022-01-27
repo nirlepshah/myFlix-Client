@@ -70,7 +70,7 @@ export function RegistrationView(props) {
   //method to handle Registration
   const handleRegister = (e) => {
     e.preventDefault();
-    //  console.log(username, password);
+    console.log(username, password);
     const isReq = validate();
     if (isReq) {
       axios
@@ -91,7 +91,6 @@ export function RegistrationView(props) {
           alert("unable to register");
         });
       <LoginView />;
-      // props.onRegistration(username); //allows  user to register default
     }
   };
 
@@ -99,23 +98,6 @@ export function RegistrationView(props) {
     <>
       {/* Add React Bootstrap Components  */}
       <Container fluid>
-        {/* <Navbar fixed="top" className="registrationnav">
-          <Container>
-            <Navbar.Brand href="#home">
-              {" "}
-              <h1> MyFlix </h1>{" "}
-            </Navbar.Brand>
-
-            {/* <Nav className="me-auto"></Nav>
-            <Nav.Link
-              className="registerLink"
-              tyle={{ color: "#EEB76B" }}
-              href="#action1"
-            >
-              Login
-            </Nav.Link> */}
-        {/* </Container>
-        </Navbar> */}{" "}
         <div className="box"></div>
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col xs={8} md={6} lg={6}>
@@ -208,5 +190,5 @@ export function RegistrationView(props) {
 
 //propType defined for RegistrationView Component
 RegistrationView.propTypes = {
-  onRegistration: propTypes.func.isRequired,
+  handleRegister: propTypes.func.isRequired,
 };
