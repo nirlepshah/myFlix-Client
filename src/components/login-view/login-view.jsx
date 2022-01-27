@@ -59,8 +59,6 @@ export function LoginView(props) {
         .catch((e) => {
           console.log("no such user");
         });
-      // console.log(username, password);
-      // props.onLoggedIn(username); // allows  user to be automatically log in
     }
   };
 
