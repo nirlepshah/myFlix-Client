@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./movie-view.scss";
 //Component to be rendered when movie is selected
 export class MovieView extends React.Component {
   render() {
