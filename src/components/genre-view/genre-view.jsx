@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./genre-view.scss";
 
 export class GenreView extends React.Component {
   render() {
@@ -19,6 +20,7 @@ export class GenreView extends React.Component {
 
         <button
           onClick={() => {
+            // onBackClick();
             window.history.back();
           }}
         >
@@ -28,3 +30,12 @@ export class GenreView extends React.Component {
     );
   }
 }
+
+GenreView.propoTypes = {
+  movie: propTypes.shape({
+    Genre: propTypes.shape({
+      Name: propTypes.string.isRequired,
+      Description: propTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
