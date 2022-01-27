@@ -42,7 +42,7 @@ export function NavBar({ user }) {
             {isAuth() && <Nav.Link href={`/users/${user}`}>{user}</Nav.Link>}
 
             {!isAuth() && <Nav.Link href="/">Sign-in</Nav.Link>}
-            {!isAuth() && <Nav.Link href="/register">Sing-up</Nav.Link>}
+            {!isAuth() && <Nav.Link href="/register">Sign-up</Nav.Link>}
             <Nav.Link href={`/users/${Username}`}>Profile</Nav.Link>
             {!isAuth() && (
               <Button
