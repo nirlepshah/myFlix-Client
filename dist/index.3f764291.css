@@ -74,6 +74,39 @@
 .main-view {
   margin-top: 1rem;
 }
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+.profile-view {
+  background-color: white;
+  width: 50%;
+}
+
+.profile-card {
+  width: auto;
+  height: auto;
+  background-color: lightblue !important;
+  color: black;
+}
+
+.favorite-movie {
+  background-color: white !important;
+}
+
+.movie_title {
+  font-style: italic;
+  text-decoration: underline;
+}
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  color: white !important;
+}
 .my-flix {
   color: steelblue;
 }
