@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./director-view.scss";
 export class DirectorView extends React.Component {
   render() {
-    const { movie, onBackClick } = this.props;
+    const { movie, movies, onBackClick } = this.props;
     let date = new Date(movie.Director.Birth);
 
     return (
@@ -19,6 +20,7 @@ export class DirectorView extends React.Component {
         <p>
           <b>Birth Day:</b> {date.toISOString().split("T")[0]}
         </p>
+
         <button
           onClick={() => {
             window.history.back();
@@ -30,3 +32,11 @@ export class DirectorView extends React.Component {
     );
   }
 }
+DirectorView.propoTypes = {
+  movie: propTypes.shape({
+    Director: propTypes.shape({
+      Name: propTypes.string.isRequired,
+      Bio: propTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
