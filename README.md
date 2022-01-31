@@ -6,18 +6,18 @@ MyFlix is a client-side application built using ReactJS for its existing server-
 
 ## <b> App Features </b>
 
-● Returns a list of ALL movies to the user (each listed item with an image, title, and description)
-● Ability to select a movie for more details
-● Returns data (description, genre, director, image) about a single movie to the user
-● Allows users to log in with a username and password
-● Allows new users to register (username, password, email, birthday)
-● Returns data about a genre, with a name and description
-● Returns data about a director (name, bio, birth year, death year)
-● Allows users to update their user info (username, password, email, date of birth)
-● Allows existing users to deregister
-● Displays favorite movies
-● Allows users to remove a movie from their list of favorites
-● The application is a mix of class components and function components
+● Returns a list of ALL movies to the user (each listed item with an image, title, and description) <br>
+● Ability to select a movie for more details <br>
+● Returns data (description, genre, director, image) about a single movie to the user<br>
+● Allows users to log in with a username and password <br>
+● Allows new users to register (username, password, email, birthday)<br>
+● Returns data about a genre, with a name and description <br>
+● Returns data about a director (name, bio, birth year, death year)<br>
+● Allows users to update their user info (username, password, email, date of birth)<br>
+● Allows existing users to deregister<br>
+● Displays favorite movies<br>
+● Allows users to remove a movie from their list of favorites<br>
+● The application is a mix of class components and function components<br>
 
 ## Project dependencies/ Tools
 
@@ -30,3 +30,5 @@ MyFlix is a client-side application built using ReactJS for its existing server-
 ## Link to GitHub repository
 
 - **[Click here](https://github.com/nirlepshah/myFlix-Client/tree/branch4)**
+
+## App screenshots
