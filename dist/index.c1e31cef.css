@@ -1,0 +1,115 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.LoginCard {
+  margin-top: 50%;
+}
+
+.LoginContainer {
+  background-color: lightslategray;
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.registerLink {
+  font-weight: bold;
+  color: #eeb76b !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: lightslategray;
+  position: fixed;
+  height: 1rem;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.registrationnav {
+  height: 2.8rem;
+  top: 0px;
+  right: 0px;
+  background-color: lightslategray;
+  position: fixed;
+  left: 0px;
+}
+
+.register-card {
+  color: black;
+}
+
+.registerbtn {
+  color: white !important;
+  background: darkblue !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main-view {
+  margin-top: 1rem;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+.profile-view {
+  background-color: white;
+  width: 50%;
+}
+
+.profile-card {
+  width: auto;
+  height: auto;
+  background-color: lightblue !important;
+  color: black;
+}
+
+.favorite-movie {
+  background-color: white !important;
+}
+
+.movie_title {
+  font-style: italic;
+  text-decoration: underline;
+}
+* {
+  box-sizing: border-box;
+}
+
+.moviecard {
+  max-height: 30rem;
+  min-height: 30rem;
+  margin-top: 10px;
+  color: red;
+}
+
+.cardTitle {
+  font-style: italic;
+  padding-top: 2px;
+  font-variant: small-caps;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+.movieCard {
+  background-color: red;
+}
+.my-flix {
+  color: steelblue;
+}
+/*# sourceMappingURL=index.c1e31cef.css.map */
