@@ -32,3 +32,12 @@ MyFlix is a client-side application built using ReactJS for its existing server-
 - **[Click here](https://github.com/nirlepshah/myFlix-Client/tree/branch4)**
 
 ## App screenshots
+
+Main View
+![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/MainView.png)
+
+Login View
+![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/LoginView.png)
+
+Register View
+![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/RegisterView.png)
