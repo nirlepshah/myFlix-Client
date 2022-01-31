@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+
 import {
   Button,
   Card,
@@ -19,7 +20,6 @@ export class ProfileView extends React.Component {
   constructor() {
     super();
     this.state = {
-      users: [],
       movies: [],
       Username: null,
       Password: null,
@@ -167,7 +167,7 @@ export class ProfileView extends React.Component {
     console.log(Birthday);
   }
 
-  //Deelte User Method
+  //Delete User Method
 
   deleteUser() {
     const user = localStorage.getItem("user");
@@ -206,8 +206,15 @@ export class ProfileView extends React.Component {
   }
 
   render() {
-    const { FavouriteMovies, validated } = this.state;
-    const { movies } = this.props;
+    const {
+      FavouriteMovies,
+      validated,
+      Username,
+      Password,
+      Email,
+      Birthday,
+      movies,
+    } = this.state;
 
     return (
       <>
@@ -355,6 +362,14 @@ export class ProfileView extends React.Component {
               }
             })}
         </Container>
+        <br />
+        <Button
+          onClick={() => {
+            window.history.back();
+          }}
+        >
+          Back
+        </Button>
       </>
     );
   }
