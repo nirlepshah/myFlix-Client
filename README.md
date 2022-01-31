@@ -1,6 +1,6 @@
 # myFlix-Client
 
-### <b> Project Description </b>
+## <b> Project Description </b>
 
 MyFlix is a client-side application built using ReactJS for its existing server-side code. MyFlix app is a responsive app that displays a list of movies for registered users and details about a particular. Users can access information on movies, directors, and genres. It also uses React Redux library
 
@@ -33,11 +33,11 @@ MyFlix is a client-side application built using ReactJS for its existing server-
 
 ## App screenshots
 
-Main View
+Main View <br>
 ![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/MainView.png)
 
-Login View
+Login View <br>
 ![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/LoginView.png)
 
-Register View
+Register View <br>
 ![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/RegisterView.png)
