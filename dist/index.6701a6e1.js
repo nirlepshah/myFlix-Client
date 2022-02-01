@@ -41279,6 +41279,8 @@ class ProfileView extends _reactDefault.default.Component {
                     __self: this
                 }),
                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                    style: {
+                    },
                     onClick: ()=>{
                         window.history.back();
                     },
