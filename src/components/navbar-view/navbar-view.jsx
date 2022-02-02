@@ -18,7 +18,7 @@ export function NavBar({ user }) {
       return false;
     }
     if (localStorage.getItem("token")) {
-      return localStorage.getItem("toke");
+      return localStorage.getItem("token");
     } else {
       return false;
     }
@@ -43,19 +43,6 @@ export function NavBar({ user }) {
 
             {!isAuth() && <Nav.Link href="/">Sign-in</Nav.Link>}
             {!isAuth() && <Nav.Link href="/register">Sign-up</Nav.Link>}
-            <Nav.Link href={`/users/${Username}`}>Profile</Nav.Link>
-            {!isAuth() && (
-              <Button
-                className="btn"
-                variant="danger"
-                onClick={() => {
-                  localStorage.clear();
-                  window.open("/", "self");
-                }}
-              >
-                Logout
-              </Button>
-            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
