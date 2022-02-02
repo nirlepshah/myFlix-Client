@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 import "./genre-view.scss";
 
 export class GenreView extends React.Component {
@@ -18,14 +19,14 @@ export class GenreView extends React.Component {
           {movie.Genre.Description}
         </p>
 
-        <button
+        <Button
+          variant="primary"
           onClick={() => {
-            // onBackClick();
-            window.history.back();
+            onBackClick();
           }}
         >
           Back
-        </button>
+        </Button>
       </div>
     );
   }
