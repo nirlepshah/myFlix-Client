@@ -30,10 +30,12 @@ export function LoginView(props) {
     if (!username) {
       setUsernameErr("Username required");
       isRequired = false;
+      alert("Username is required");
     }
     if (!password) {
       setPasswordErr("Password is required");
       isReq = false;
+      alert("Password is required");
     } else if (password.length < 4) {
       setPasswordErr("Password must be 8 characters long");
       isReq = false;
@@ -58,6 +60,7 @@ export function LoginView(props) {
         })
         .catch((e) => {
           console.log("no such user");
+          alert("No such user exist");
         });
     }
   };
@@ -80,7 +83,6 @@ export function LoginView(props) {
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        // onChange={(e) => setUsername(e.target.value)}
                         placeholder="Enter Username"
                       />
                       {usernameErr && <p>{usernameErr}</p>}
