@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+
 import "./director-view.scss";
 export class DirectorView extends React.Component {
   render() {
@@ -21,13 +23,14 @@ export class DirectorView extends React.Component {
           <b>Birth Day:</b> {date.toISOString().split("T")[0]}
         </p>
 
-        <button
+        <Button
+          variant="primary"
           onClick={() => {
-            window.history.back();
+            onBackClick();
           }}
         >
           Back
-        </button>
+        </Button>
       </div>
     );
   }
