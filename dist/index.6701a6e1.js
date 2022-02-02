@@ -41509,17 +41509,14 @@ parcelHelpers.export(exports, "NavBar", ()=>NavBar
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-// import { Link, Redirect } from "react-router-dom";
-var _reactBootstrap = require("react-bootstrap");
 var _reactRouterDom = require("react-router-dom");
+var _reactBootstrap = require("react-bootstrap");
 var _navbarViewScss = require("./navbar-view.scss");
-if (!user) return;
-alert("Usernamme or Password does not match");
 function NavBar({ user  }) {
     const Username = localStorage.getItem("user");
     const isAuth = ()=>{
         if (typeof window == "undefined") return false;
-        if (localStorage.getItem("token")) return localStorage.getItem("toke");
+        if (localStorage.getItem("token")) return localStorage.getItem("token");
         else return false;
     };
     return(/*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Navbar, {
@@ -41530,13 +41527,13 @@ function NavBar({ user  }) {
         variant: "dark",
         __source: {
             fileName: "src/components/navbar-view/navbar-view.jsx",
-            lineNumber: 31
+            lineNumber: 28
         },
         __self: this,
         children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
             __source: {
                 fileName: "src/components/navbar-view/navbar-view.jsx",
-                lineNumber: 38
+                lineNumber: 35
             },
             __self: this,
             children: [
@@ -41545,15 +41542,16 @@ function NavBar({ user  }) {
                     href: "/",
                     __source: {
                         fileName: "src/components/navbar-view/navbar-view.jsx",
-                        lineNumber: 39
+                        lineNumber: 36
                     },
-                    __self: this
+                    __self: this,
+                    children: "MyFlix"
                 }),
                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Navbar.Toggle, {
                     "aria-controls": "responsive-navbar-nav",
                     __source: {
                         fileName: "src/components/navbar-view/navbar-view.jsx",
-                        lineNumber: 42
+                        lineNumber: 39
                     },
                     __self: this
                 }),
@@ -41561,14 +41559,14 @@ function NavBar({ user  }) {
                     id: "responsive-navbar-nav",
                     __source: {
                         fileName: "src/components/navbar-view/navbar-view.jsx",
-                        lineNumber: 43
+                        lineNumber: 40
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Nav, {
                         className: "m1-auto",
                         __source: {
                             fileName: "src/components/navbar-view/navbar-view.jsx",
-                            lineNumber: 44
+                            lineNumber: 41
                         },
                         __self: this,
                         children: [
@@ -41576,7 +41574,7 @@ function NavBar({ user  }) {
                                 href: `/users/${user}`,
                                 __source: {
                                     fileName: "src/components/navbar-view/navbar-view.jsx",
-                                    lineNumber: 45
+                                    lineNumber: 42
                                 },
                                 __self: this,
                                 children: user
@@ -41585,7 +41583,7 @@ function NavBar({ user  }) {
                                 href: "/",
                                 __source: {
                                     fileName: "src/components/navbar-view/navbar-view.jsx",
-                                    lineNumber: 47
+                                    lineNumber: 44
                                 },
                                 __self: this,
                                 children: "Sign-in"
@@ -41594,32 +41592,10 @@ function NavBar({ user  }) {
                                 href: "/register",
                                 __source: {
                                     fileName: "src/components/navbar-view/navbar-view.jsx",
-                                    lineNumber: 49
+                                    lineNumber: 45
                                 },
                                 __self: this,
                                 children: "Sign-up"
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Nav.Link, {
-                                href: `/users/${Username}`,
-                                __source: {
-                                    fileName: "src/components/navbar-view/navbar-view.jsx",
-                                    lineNumber: 50
-                                },
-                                __self: this,
-                                children: "Profile"
-                            }),
-                            !isAuth() && /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
-                                variant: "danger",
-                                onClick: ()=>{
-                                    localStorage.clear();
-                                    window.open("/", "self");
-                                },
-                                __source: {
-                                    fileName: "src/components/navbar-view/navbar-view.jsx",
-                                    lineNumber: 52
-                                },
-                                __self: this,
-                                children: "Signout"
                             })
                         ]
                     })
