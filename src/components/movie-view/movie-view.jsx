@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./movie-view.scss";
+import { Button } from "react-bootstrap";
 //Component to be rendered when movie is selected
 export class MovieView extends React.Component {
   render() {
@@ -45,14 +46,14 @@ export class MovieView extends React.Component {
           <span className="value">{movie._id}</span>
         </div>{" "}
         <br />
-        <button
+        <Button
           onClick={() => {
             onBackClick(null);
             // window.history.back();
           }}
         >
           Back
-        </button>
+        </Button>
       </div>
     );
   }
