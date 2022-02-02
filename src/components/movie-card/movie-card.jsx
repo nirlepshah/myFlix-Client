@@ -14,12 +14,13 @@ export class MovieCard extends React.Component {
       <div>
         <Container>
           <Row>
-            <Col md={9}>
+            <Col fluid>
               <CardGroup>
                 <Card bg="light" className="moviecard">
                   <Card.Img
                     variant="top"
                     src={movie.ImagePath}
+                    alt="Movie Image"
                     style={{
                       objectFit: "cover",
                       height: "15rem",
