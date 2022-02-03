@@ -45,12 +45,18 @@ Register View <br>
 <br>
 ![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch5/dist/img/RegisterView.png)
 
+## Server side link
+
+https://mymovieapp08.herokuapp.com/documentation
+
 ## Installation:
 
 Clone the repository, change directories, and use NPM to install the dependencies.
 
-git clone -b branch5 https://github.com/nirlepshah/myFlix-Client
-cd myFlix-Client
-npm install
-parcel src/index.html
+git clone -b branch5 https://<span></span>github.com/nirlepshah/myFlix-Client <br>
+cd myFlix-Client <br>
+npm install <br>
+parcel src/index.html <br>
 Open http://localhost:1234
+
+#
