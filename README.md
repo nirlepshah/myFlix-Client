@@ -43,4 +43,4 @@ Login View <br>
 
 Register View <br>
 <br>
-![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/RegisterView.png)
+![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch5/dist/img/RegisterView.png)
