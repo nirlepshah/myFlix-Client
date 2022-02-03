@@ -51,12 +51,10 @@ https://mymovieapp08.herokuapp.com/documentation
 
 ## Installation:
 
-Clone the repository, change directories, and use NPM to install the dependencies.
+Clone the repository, change directories, use NPM to install the dependencies, and build with parcel.
 
-git clone -b branch5 https://<span></span>github.com/nirlepshah/myFlix-Client <br>
-cd myFlix-Client <br>
-npm install <br>
-parcel src/index.html <br>
-Open http://localhost:1234
-
-#
+○ git clone -b branch5 https://<span></span>github.com/nirlepshah/myFlix-Client <br>
+○ cd myFlix-Client <br>
+○ npm install <br>
+○ parcel src/index.html <br>
+○ Open http://localhost:1234
