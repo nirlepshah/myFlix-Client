@@ -44,3 +44,13 @@ Login View <br>
 Register View <br>
 <br>
 ![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch5/dist/img/RegisterView.png)
+
+## Installation:
+
+Clone the repository, change directories, and use NPM to install the dependencies.
+
+git clone -b branch5 https://github.com/nirlepshah/myFlix-Client
+cd myFlix-Client
+npm install
+parcel src/index.html
+Open http://localhost:1234
