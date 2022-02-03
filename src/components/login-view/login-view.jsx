@@ -60,7 +60,7 @@ export function LoginView(props) {
         })
         .catch((e) => {
           console.log("no such user");
-          alert("Username & Password combinations does not match");
+          alert("Username & Password combination is not correct");
         });
     }
   };
