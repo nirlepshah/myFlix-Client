@@ -39875,7 +39875,7 @@ function LoginView(props) {
             props.onLoggedIn(data);
         }).catch((e1)=>{
             console.log("no such user");
-            alert("Username & Password combinations does not match");
+            alert("Username & Password combination is not correct");
         });
     };
     return(// Add React BootStrap Elements
