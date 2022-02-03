@@ -39,7 +39,7 @@ Main View <br>
 
 Login View <br>
 <br>
-![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/Login View.png)
+![alt Main View](https://github.com/nirlepshah/myFlix-Client/blob/branch4/dist/img/Login_View.png)
 
 Register View <br>
 <br>
